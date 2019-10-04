@@ -1,33 +1,157 @@
-.App {
+.startWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.levelWrapper {
+  display: flex;
+}
+
+.letsPlay {
+  font-size: 60px;
+  padding: 100px;
+  font-family: 'Caveat', cursive;
+}
+
+.levels {
+  height: 50px;
+  width: 200px;
+  border: 2px solid black;
+  background-color: rgba(95, 212, 246, 0.83);
+  border-radius: 25px;
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  box-shadow: 0 9px rgba(0,0,0,0.25);
+}
+
+.levels:hover {background-color: #5FD4F6
+}
+
+.levels:active {
+  background-color: #58bfdf;
+  box-shadow: 0 5px rgba(0,0,0,0.30);
+  transform: translateY(4px);
+}
+.bodyWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 13vw;
+}
+.boardWrapper {
+  padding: 60px;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 21px;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+.box:nth-child(3n+3):not(:last-child) {
+  border-right: 3px solid black
+}
+
+.row:nth-child(3n+3):not(:last-child) {
+  border-bottom: 3px solid black !important;
+}
+
+.notes {
+  font-size: .5em;
+  width: 33%;
+  height: 35%;
+  padding: 3px 0px;
+  transform: translateY(-21px);
+  opacity: 0.6;
+}
+
+.number {
+  font-size: 40px;
+  padding-top: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.number-notes {
+  font-size: 40px;
+  padding-top: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #568092;
+}
+
+.controls-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 60px;
+  align-items: center;
+}
+
+.notesOnOff{
+  transform: translate(24px, 18px);
+  background-color: #FF7D7D;
+  border-radius: 50px;
+  width: 30px;
+  padding: 3px 0px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.action-notes {
+  cursor: pointer;
+}
+
+.action-erase{
+  padding-top: 50px;
+  cursor: pointer;
+}
+
+.action-undo{
+  padding-top: 60px;
+  cursor: pointer;
+}
+
+.action-newGame{
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.newGameText {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
