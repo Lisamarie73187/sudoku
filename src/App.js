@@ -58,7 +58,7 @@ function App() {
         const prefilled = selectedCell && selectedCell.get('prefilled');
         return (
                 <div className="controls-wrapper">
-                    <div>
+                    <div className="number-wrapper">
                         {range(9).map((i) => {
                             const number = i + 1;
                             // handles binding single click and double click callbacks
@@ -78,19 +78,19 @@ function App() {
                     <div className="actions">
                         <div className="action-notes" onClick={!prefilled ? () => setNotesFlag(!notesFlag) : null}>
                             <div className='notesOnOff'> {notesFlag ? 'on' : 'off'}</div>
-                            <img src={notesIcon} alt="notes-icon" height={58} width={48}/>
-                            <div>Notes</div>
+                            <img src={notesIcon} alt="notes-icon" className="notesIcon"/>
+                            <div className="iconText">Notes</div>
                         </div>
                         <div className="action-erase" onClick={!prefilled ? eraseSelected : null}>
-                            <img src={eraseIcon} alt="erase-icon" height={50} width={50}/>
-                            <div>Erase</div>
+                            <img src={eraseIcon} alt="erase-icon" className='eraseIcon'/>
+                            <div className="iconText" >Erase</div>
                         </div>
                         <div className="action-undo" onClick={!prefilled ? undo : null}>
-                            <img src={undoIcon} alt="undoIcon" height={40} width={40}/>
-                            <div>Undo</div>
+                            <img src={undoIcon} alt="undoIcon" className="undoIcon"/>
+                            <div className="iconText" >Undo</div>
                         </div>
                         <div className="action-newGame" onClick={!prefilled ? newGame : null}>
-                            <img src={newGameIcon} alt="newGameIcon" height={40} width={40}/>
+                            <img src={newGameIcon} alt="newGameIcon" className="newGameIcon"/>
                             <div className="newGameText">New Game</div>
                         </div>
                     </div>

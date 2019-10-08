@@ -8,6 +8,7 @@
 
 .levelWrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .letsPlay {
@@ -42,9 +43,9 @@
 .bodyWrapper{
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  padding-right: 13vw;
+  /*padding-right: 13vw;*/
 }
 .boardWrapper {
   padding: 60px;
@@ -115,6 +116,26 @@
   align-items: center;
 }
 
+.notesIcon{
+  height:58px;
+  width: 48px
+}
+
+.eraseIcon{
+  height:50px;
+  width: 50px
+}
+
+.undoIcon{
+  height:40px;
+  width: 40px
+}
+
+.newGameIcon{
+  height:40px;
+  width: 40px
+}
+
 .notesOnOff{
   transform: translate(24px, 18px);
   background-color: #FF7D7D;
@@ -154,4 +175,169 @@
 }
 
 
+@media screen and (max-width: 1025px) {
+  .levelWrapper {
+    width: 50%;
+    justify-content: center;
+  }
+  .letsPlay {
+    padding: 80px;
+  }
+  .levels {
+    margin-top: 30px;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .box {
+    height: 50px;
+    width: 50px;
+    padding-top: 13px;
+    font-size: 20px;
+  }
+  .number {
+    font-size: 25px;
+    padding-top: 20px;
+  }
+
+  .actions {
+    padding: 20px 30px;
+  }
+
+  .notesIcon{
+    height: 38px;
+    width: 28px
+  }
+
+  .eraseIcon{
+    height:30px;
+    width: 30px
+  }
+
+  .undoIcon{
+    height:20px;
+    width: 20px
+  }
+
+  .newGameIcon{
+    height: 20px;
+    width: 20px
+  }
+
+  .action-erase{
+    padding-top: 25px;
+  }
+
+  .action-undo{
+    padding-top: 25px;
+  }
+
+  .action-newGame{
+    padding-top: 25px;
+  }
+
+  .iconText {
+    font-size: 12px;
+  }
+  .newGameText {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .bodyWrapper{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .boardWrapper {
+    padding: 30px;
+  }
+
+  .box {
+    height: 37px;
+    width: 37px;
+    padding-top: 10px;
+    font-size: 16px;
+  }
+
+  .number-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .controls-wrapper {
+    flex-direction: column;
+  }
+
+  .actions {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+
+  .number {
+    font-size: 25px;
+    padding: 0px  10px;
+  }
+
+  .notesIcon{
+    height: 38px;
+    width: 28px
+  }
+
+  .eraseIcon{
+    height:30px;
+    width: 30px
+  }
+
+  .undoIcon{
+    height:20px;
+    width: 20px
+  }
+
+  .newGameIcon{
+    height: 20px;
+    width: 20px
+  }
+
+  .action-erase{
+    padding-top: 25px;
+  }
+
+  .action-undo{
+    padding-top: 25px;
+  }
+
+  .action-newGame{
+    padding-top: 25px;
+  }
+
+  .iconText {
+    font-size: 12px;
+  }
+  .newGameText {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .startWrapper {
+    padding: 10px;
+  }
+  .levelWrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .startWrapper {
+    padding: 5px;
+  }
+  .levelWrapper {
+    width: 100%;
+  }
+  .letsPlay {
+    padding: 30px;
+  }
+}
