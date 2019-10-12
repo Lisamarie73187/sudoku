@@ -328,6 +328,7 @@ function App() {
                 </div>
                 {board && renderNumberAndActionControl()}
             </div>
+            <div className='lisa'>2019 Lisa Herzberg</div>
         </div>
   );
 }

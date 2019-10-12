@@ -174,6 +174,12 @@
   text-align: center;
 }
 
+.lisa {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
 
 @media screen and (max-width: 1025px) {
   .levelWrapper {
